@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción WEBINAR Shinko-IT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.postimg.cc/L504GJzQ/Leonardo-Phoenix-10-Design-a-professional-and-modern-visual-re-2.png');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #000; /* Color del título cambiado a negro */
+        }
+        h2 {
+            text-align: center;
+            color: #c00;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #444;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus, input[type="email"]:focus {
+            border-color: #c00;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #c00;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #a00;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inscripción WEBINAR Shinko-IT</h1>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D4W000000Grvm" method="POST">
+        <input type="hidden" name="oid" value="00D4W000000Grvm">
+        <input type="hidden" name="retURL" value="http://www.shinko-it.com">
+        
+        <h2>Contacto</h2>
+        
+        <label for="first_name">Nombre</label>
+        <input id="first_name" maxlength="40" name="first_name" type="text" required>
+        
+        <label for="last_name">Apellidos</label>
+        <input id="last_name" maxlength="80" name="last_name" type="text" required>
+        
+        <label for="email">Correo electrónico</label>
+        <input id="email" maxlength="80" name="email" type="email" required>
+        
+        <label for="mobile">Móvil</label>
+        <input id="mobile" maxlength="40" name="mobile" type="text" required>
+        
+        <label for="company">Compañía</label>
+        <input id="company" maxlength="40" name="company" type="text" required>
+        
+        <label for="city">Ciudad</label>
+        <input id="city" maxlength="40" name="city" type="text" required>
+        
+        <input type="submit" name="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
